@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <% if params.size == 2 %>
+      <% @num.to_i.times do %>
+        <%= @phrase %>
+      <% end %>
+    <% else %>
+      <%= "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}." %>
+    <% end %>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <% if @operation == 'add' %>
+      <%= "#{(@num1.to_i + @num2.to_i).to_s}}" %>
+    <% elsif @operation == 'subtract' %>
+      <%= "#{(@num1.to_i - @num2.to_i).to_s}}" %>
+    <% elsif @operation == 'multiply' %>
+      <%= "#{(@num1.to_i * @num2.to_i).to_s}}" %>
+    <% elsif @operation == 'divide' %>
+      <%= "#{(@num1.to_i / @num2.to_i).to_s}}" %>
+    <% end %>
+  </body>
+</html>
